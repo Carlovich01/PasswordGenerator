@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body::before {
+    background-image: url("img/candado.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.4;
+}
+
+.container {
+    width: 90vw;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1.75vw;
+    border: 0.1vw solid #1875E8;
+    box-shadow: 1vw 1vw 1vw 1vw rgba(1, 8, 14, 0.15);
+    background-image: url("img/Ruido.png");
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.container__contenido {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+}
+
+.container__informacion {
+    flex: 1;
+    padding: 1vw;
+    width: 100%;
+    height: 100%;
+}
+
+.container__texto {
+    margin: 1vh 0;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 5vw;
+    font-style: normal;
+    line-height: 100%;
+    padding: 2vw;
+}
+
+.container__texto-azul {
+    color: #1875E8;
+    display: block;
+}
+
+.container__campo {
+    display: flex;
+    align-items: center;
+    margin: 3vh;
+    gap: 1vw;
+}
+
+.container__input {
+    background-color: #FFF;
+    color: #535353;
+}
+
+.boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #1875E8;
+    width: 15vw;
+    box-shadow: 0 0 1vw 0 rgba(24, 117, 232, 0.50);
+    cursor: pointer;
+}
+
+.container__contrasena {
+    background-color: #FFF;
+    color: #1875E8;
+}
+
+.container__input, .container__contrasena {
+    width: 40vw;
+    font-weight: 700;
+}
+
+.container__input, .container__contrasena, .boton {
+    height: 5vh;
+    padding: 2.5vw;
+    font-size: 2.25vw;
+    border-radius: 1vw;
+    font-family: 'Inter', sans-serif;
+    border: none;
+}
+/* Breakpoint para pantallas pequeñas */
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 7vw; 
+        padding: 1vw;
+    }
+
+    .container__input, .container__contrasena, .boton {
+        width: 70vw; 
+        font-size: 4vw; 
+        padding: 2vw;
+    }
+
+    .container__campo {
+        flex-direction: column; 
+        gap: 2vh; 
+    }
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 8vw; 
+        padding: 2vw;
+    }
+
+    .container__input, .container__contrasena, .boton {
+        width: 80vw; 
+        font-size: 6vw; 
+        padding: 4vw;
+    }
+
+    .container__campo {
+        flex-direction: column; 
+        gap: 3vh; 
+    }
+}
+
+@media (max-width: 550px) {
+    h1 {
+        font-size: 9vw; 
+        padding: 3vw;
+    }
+
+    .container__input, .container__contrasena, .boton {
+        width: 70vw; 
+        font-size: 7vw; 
+        padding: 5vw;
+    }
+
+    .container__campo {
+        flex-direction: column; 
+        gap: 4vh; 
+    }
+}
+
+@media (max-width: 368px) {
+    h1 {
+        font-size: 10vw; 
+        padding: 3vw;
+    }
+
+    .container__input, .container__contrasena, .boton {
+        width: 85vw; 
+        font-size: 8vw; 
+        padding: 8vw;
+    }
+
+    .container__campo {
+        flex-direction: column; 
+        gap: 3vh; 
+        margin-left: 0;
+        margin-right: 0;
+
+    }
+}
+
+
